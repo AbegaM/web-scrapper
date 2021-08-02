@@ -1,8 +1,8 @@
-const puppeteer = require("puppeteer"); 
-const dotenv = require("dotenv").config()
+const puppeteer = require("puppeteer");
+const dotenv = require("dotenv").config();
 
-var userName = process.env.USER_NAME 
-var password = process.env.PASSWORD
+var userName = process.env.USER_NAME;
+var password = process.env.PASSWORD;
 
 //get link and  retrun page instance
 const initialize = async (uri) => {
@@ -24,6 +24,7 @@ const logIn = async (page) => {
   //click login button
   await page.waitForSelector("button[type=button]");
   await page.click('button[type="button"]');
+  return page;
 };
 
 const getDataFromTable = async (page) => {
