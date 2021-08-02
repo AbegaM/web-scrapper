@@ -22,7 +22,10 @@
 1.  Create .env file
 2.  Add your environment variables in the file you created
     ```
-     PAGE_URL=https://example.com/test
+     PAGE_URL=https://example.com/test 
+     GRID_PAGE_URL=https://example.com/test/table
+     USER_NAME=example@gmail.com 
+     PASSWORD=12345678
     ```
 
 ### Run the code
