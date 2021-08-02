@@ -1,4 +1,4 @@
-## Web Scrapper Project 
+## Web Scrapper Project
 
 ### Getting Started
 
@@ -24,18 +24,18 @@
     ```
      PAGE_URL=https://example.com/test
     ```
-    - **Env variables description**
-      - **PAGE_URL:** The page you want to scrape data from
 
 ### Run the code
 
-1. Run the code in a development environment
-   ```
-     npm run dev
-   ```
-2. Run the code in production environment
+1. Run the code in production environment
+
    ```
      npm run start
+   ```
+
+2. Run the code in a development environment
+   ```
+     npm run start:dev
    ```
 
 ### Built With
