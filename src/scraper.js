@@ -6,7 +6,12 @@ var password = process.env.PASSWORD;
 
 //get link and  retrun page instance
 const initialize = async (uri) => {
-  var browser = await puppeteer.launch({ headless: false });
+  var browser = await puppeteer.launch({
+    headless: false,
+    args: [
+      "--disable-features=SameSiteByDefaultCookies,CookiesWithoutSameSiteMustBeSecure",
+    ],
+  });
   var page = await browser.newPage();
   await page.goto(uri, { waitUnitl: "networkidle0", timeout: 0 });
   return page;
